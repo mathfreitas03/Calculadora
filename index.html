@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/js/script.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Calculadora Online</title>
+</head>
+<body>
+    <section class="main">
+        <div class="calculadora">
+            <h1>CALCULATRON 2024</h1>
+            <div id="visor">
+                <p id="content">12345</p>
+            </div>
+            <div class="buttons-container">
+                <div class="button" onclick="addArgument(this)">7</div>
+                <div class="button" onclick="addArgument(this)">8</div>
+                <div class="button" onclick="addArgument(this)">9</div>
+                <div class="button-menor" id="del" onclick="deleteChar()">DEL</div>
+                <div class="button-menor" id="ac" onclick="clearAll()">AC</div>
+                <div class="button" onclick="addArgument(this)">4</div>
+                <div class="button" onclick="addArgument(this)">5</div>
+                <div class="button" onclick="addArgument(this)">6</div>
+                <div class="button sign-argument" onclick="addSignArgument(this)">x</div>
+                <div class="button" onclick="addSignArgument(this)">/</div>
+                <div class="button" onclick="addArgument(this)">1</div>
+                <div class="button" onclick="addArgument(this)">2</div>
+                <div class="button" onclick="addArgument(this)">3</div>
+                <div class="button" onclick="addSignArgument(this)">+</div>
+                <div class="button" onclick="addSignArgument(this)">-</div>
+                <div class="button" onclick="addArgument(this)">0</div>
+                <div class="button" onclick="addSignArgument(this)" id="dot">.</div>
+                <div class="button-menor"><p>x10<sup>y</sup></p></div>
+                <div class="button-menor" id="ans">Ans</div>
+                <div class="button" id="equal" onclick="calculate()">=</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

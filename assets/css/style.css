@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Orbitron:wght@400..900&display=swap');
+
+*{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.calculadora {
+    margin: auto;
+    width: 415px;
+    height: auto;
+    border-radius: 6%;
+    background-image: linear-gradient(to bottom right, #4C4A4B, #29292A);
+    box-shadow: 2px 2px 3px darkslategrey;
+    padding-top: 30px;
+}
+
+h1 {
+    color: rgba(198, 196, 196, 0.484);
+    font-size: 1.4rem;
+    padding: 10px;
+    margin-left: 5%;
+}
+
+#visor {
+    margin: auto;
+    border: 2px solid rgb(18, 18, 18);
+    margin-bottom: 20px;
+    background-image: -moz-linear-gradient(to right, #766A61, #655A53, #373738);
+    width: 85%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    overflow: hidden;
+}
+
+#visor p {
+    padding-right: 10px;
+    font-family: 'Orbitron';
+    font-size: 2rem;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 25px;
+    padding-bottom: 45px;
+    margin: auto;
+    width: 85%;
+    justify-content: space-evenly;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    margin: 10px;
+    background-color: #5F5C5D;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(163, 169, 169);
+}
+
+.button:hover {
+    background-color: #504d4e;
+}
+
+.button-menor {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    margin: 10px;
+    background-color: #5F5C5D;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: rgb(163, 169, 169);
+}
+
+.button-menor:hover {
+    background-color: #504d4e;
+}
+
+#del, #ac{
+    background-color: #EFEA5C;
+    color: rgb(50, 50, 50);
+}
+
+#del:hover,#ac:hover{
+    background-color: #d1cd50;
+}
